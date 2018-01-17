@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="websocket.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        <div id="wrapper">
+            <h1>Websocket with JEE demo</h1>
+            <p>Demo service for publishing orders over websockets. Click the 'Add an order' button to start adding orders and receiving quantity values.</p>
+            <br />
+            <div id="addOrder">
+                <div class="button"> <a href="#" OnClick="showForm()">Add an order</a> </div>
+                <form id="addOrderForm">
+                    <h3>Add an order</h3>
+                    <span>Type: 
+                        <select id="order_type">
+                            <option name="type" value="0">WIG20</option>
+                            <option name="type" value="1">ZYWIEC</option>
+                            <option name="type" value="2">VISTULA</option>
+                            <option name="type" value="3">REMAK</option>
+                        </select></span>
+
+                    <input type="button" class="button" value="Add" onclick=formSubmit()>
+                    <input type="reset" class="button" value="Cancel" onclick=hideForm()>
+                </form>
+            </div>
+            <br />
+            <h3>Currently connected orders:</h3>
+            <div id="content">
+            </div>
+        </div>
+
+    </body>
+</html>
