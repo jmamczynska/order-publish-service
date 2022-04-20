@@ -14,7 +14,7 @@
 		<!-- JBoss dependency versions -->
 		<version.wildfly.maven.plugin>1.0.2.Final</version.wildfly.maven.plugin>
 		<version.jboss.bom>8.2.1.Final</version.jboss.bom>
-		<version.resteasy>3.0.10.Final</version.resteasy>
+		<version.resteasy>4.6.1.Final</version.resteasy>
 		<version.surefire.plugin>2.16</version.surefire.plugin>
 		<version.war.plugin>2.5</version.war.plugin>
 
